@@ -1,0 +1,43 @@
+body{
+    background-color: lightgray;
+}
+h1{
+    color:blue
+}
+h2{
+    color:#BA521F
+}
+h3{
+    color:rgb(120, 234, 88)
+}
+p{
+    color:red
+}
+img{
+    height: 100px;width: 100px;
+}
+.primerClass{
+    color:purple
+}
+.imperio{
+    background-color: red;
+}
+.rebeldes{
+    background-color: blue;
+}
+#darthVader{
+    font-size: xx-large;
+}
+#lukeSkywalker{
+    font-style: italic;
+}
+.soldado{
+    border: dashed;
+    letter-spacing: 0.1cm;
+}
+.apoyo{
+    text-align: center;
+}
+.nave{
+    text-transform: uppercase;
+}

@@ -1,0 +1,18 @@
+#titulo{
+    text-align: center;
+}
+.centrados{
+    margin:auto;
+    display: block;
+}
+#comienzo{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+#comenzar{
+    height: 2cm;
+}
+body{
+    background-color: aquamarine;
+}
