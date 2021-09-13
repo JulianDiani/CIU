@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>
+            Petbook!
+        </title>
+    </head>
+    <body>
+        <h1>Bienvenido a Petbook, nuestra red social de mascotas!</h1>
+        <p>Petbook es el mundo ideal para nuestras mascotas, donde podran hacerse de nuevos amigos/as, y donde podras encontrar
+            ideas geniales para el dia a dia con tu mejor amigo(Obviamente,tu mascotita!)
+        </p>
+        <form action="https://formspree.io/f/mayavnyn" method="POST">
+            
+            <label>Nombre: <input type="text" name="Nombre" placeholder="Nombre" required></label><br>
+            <label>Edad: <input type="number"  name="Edad" placeholder="Edad" required></label><br>
+            <label>Color: <input type="color" name="Color" placeholder="Color" required></label><br>
+            <label>Mail: <input type="email" name="Mail" placeholder="Mail" required></label><br>
+            <label>Password: <input type="password" name="Pass" placeholder="Contrasenia" required></label><br>
+            <label>Macho: <input type="radio" name="genero" value="Macho"></label><br>
+            <label>Hembra: <input type="radio" name="genero" value="Hembra"></label><br>
+            <select name="tipo_de_mascota" id="">
+                <label>Tipo de mascota:
+                    <option value="perro">Perro</option> <br>
+                    <option value="gato">Gato</option> <br>
+                    <option value="cobayo">Cobayo</option> <br>
+                    <option value="ave">Ave</option><br>
+                </label>
+            </select><br>
+            <label> Sobre tu mascota:
+            <textarea name="sobre_tu_mascota" rows="10" cols="40"></textarea>
+        </label><br>
+
+            <label>Acepto las bases y condiciones:
+                <input type="checkbox" name="bases_y_condiciones" value="acepta"><br>
+            </label>
+            <input type="submit">
+        </form>
+    </body>
+</html>
