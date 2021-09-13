@@ -41,3 +41,15 @@ img{
 .nave{
     text-transform: uppercase;
 }
+#imperio *{
+    background-color: black;
+    color: red;
+    
+}
+#rebeldes *{
+    background-color: #ffa500;
+    color: rgb(255, 255, 255);
+}
+#darth *{
+    color: aqua;
+}
