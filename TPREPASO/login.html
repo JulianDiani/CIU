@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Login acompañamiento de alumnos</title>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="acompañamiento">
+        <h1 id="textoCentro">Centro de acompañamiento de estudiantes</h1></div>
+    <img id="logo_unahur" src="logo_unahur (1).png">
+    
+    <div class="login">
+        <div id="textoLogin">Ingresar</div>
+        <img id="personita" src="outline_person_black_24dp.png" alt="">
+        <form>
+            <div id="textoUser">
+                Usuario
+            </div><br>
+            <input type="number" class="ingresarDatos" placeholder="Usuario" id="usuario" required maxlength="8"> <br> <br> <br>
+            <div id="textoPass">Contraseña</div> 
+            <input type="password" class="ingresarDatos" placeholder="Contraseña" id="contraseña" required> <br><br><br>
+            <button id="botonIngresar" type="button"> Iniciar sesión </button>
+            
+            <div id="error"></div>
+        </form>
+        <!--<div id="error"></div>-->
+    </div>
+    <div id=posicionNuevo>
+        <a id="olvidastePass" href="solisFake.html"> ¿Olvidaste tu contraseña?</a>
+        
+        <!---  <a href="../usuarios/cm_usuario.html">Crear nuevo usuario</a> -->
+    </div>
+    <div>
+        <a id="registro" href="solisFake.html">Registrate!</a>
+    </div>
+
+
+    <script src="login.js"></script>
+</body>
+
+</html>

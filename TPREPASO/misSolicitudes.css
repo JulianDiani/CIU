@@ -1,0 +1,41 @@
+#logo{
+    display: block;
+    margin: auto;
+}
+.abajoYArriba{
+    background-color: #A5C8AF;
+}
+.solicitudes{
+    width: 316px;
+    height: 120px;
+    margin-left: 240px;
+    margin-top: 50px;
+    border-radius: 20px;
+    background: #CEEFEB;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 42px;
+    font-family: sans-serif;
+    border: 1px solid #EFAF64;
+    
+}
+#misSoli{
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 25px;
+}
+body{
+    background-color: 
+    #D1E5CC;
+}
+#irAlMenu{
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 5px;
+    margin-right: 190px;
+}
