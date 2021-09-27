@@ -1,0 +1,148 @@
+.header{
+    position: absolute;
+    width: 1440px;
+    height: 110px;
+    left: 0px;
+    top: 0px;
+    background: #A5D389;
+}
+.footer{
+    position: absolute;
+    width: 1440px;
+    height: 110px;
+    left: 0px;
+    top: 973px;
+
+background: #A5D389;
+}
+#misDescuentos{
+    position: absolute;
+    width: 225px;
+    height: 41px;
+    left: 607px;
+    top: 181px;
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 41px;
+}
+#ticket1{
+
+    position: absolute;
+    width: 981px;
+    height: 157px;
+    left: 229px;
+    top: 262px;
+
+    background: #C4C4C4;
+    border-radius: 25px;
+    border: 1px solid #A5D389;
+
+}
+#ticket2{
+    position: absolute;
+    width: 981px;
+    height: 157px;
+    left: 229px;
+    top: 478px;
+    
+    background: #C4C4C4;
+    border-radius: 25px;
+    border: 1px solid #A5D389;
+}
+
+#ticket3{
+    position: absolute;
+    width: 981px;
+    height: 157px;
+    left: 229px;
+    top: 696px;
+    
+    background: #C4C4C4;
+    border-radius: 25px;
+    border: 1px solid #A5D389;
+}
+.textosPorcentajeDesc{
+    position: absolute;
+    margin-left: 3.5cm;
+    margin-top: auto;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 157px;
+}
+.prueba{
+    position: absolute;
+    margin-left: 15cm;
+    margin-top: 5px;
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+}
+#botonLogout{
+    position: absolute;
+    width: 129px;
+    height: 44px;
+    margin-left: 1294px;
+    top: 34px;
+    background: #E7E7E7;
+    border-radius: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 10px;
+}
+#logoUsuario{
+    position: absolute;
+    width: 37px;
+    height: 38px;
+    left: 1082px;
+    top: 36px;
+}
+#nombreUser{
+    position: absolute;
+    width: 111px;
+    height: 28px;
+    left: 1130px;
+    top: 41px;
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+
+}
+.logoBA{
+    position: absolute;
+    width: 233px;
+    height: 60px;
+    left: 603px;
+    top: 25px;
+
+}
+footer{
+    position: absolute;
+    width: 541px;
+    height: 28px;
+    left: 449px;
+    top: 50px;
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 28px;
+
+}

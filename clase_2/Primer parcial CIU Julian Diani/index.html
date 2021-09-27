@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ministerio de Salud CABA</title>
+    <link rel="stylesheet" href="primerParcialLogin.css">
+</head>
+<body>
+    <div class="header">
+        <img class="logoBA" src="BA2016.png" alt="">
+    </div>
+    <div id="divLogin">
+        <img id="imgMinisterio" src="images.png" alt="">
+        <form>
+            <div id="user">
+                Usuario
+            </div>
+            <label><input id="login" class="datosLogin" placeholder=" Usuario" required></label>
+            <div id="pass">
+                Contraseña
+            </div>
+            <label><input id="contraseña" type="password" class="datosLogin" placeholder=" Contraseña" required minlength="4"></label>
+            <button id="botonLogin" type="button">Ingresar</button>
+            <div id="error"></div>
+        </form>
+    </div>
+    <div class="footer">
+        <footer>Ministerio de Salud de la Ciudad Autonoma de Buenos Aires.</footer>
+    </div>
+    <script src="primerParcialLogin.js"></script>
+</body>
+</html>
