@@ -2,7 +2,7 @@ import React from 'react'
 import { Fragment } from 'react';
 import InfoPokemon from "./InfoPokemon";
 
-const Favoritos = ({favoritos}) => {
+const Favoritos = ({favoritos,eliminarFavorito}) => {
     return ( 
         <Fragment>
             <div className="favoritos">
@@ -14,6 +14,7 @@ const Favoritos = ({favoritos}) => {
                                 isFavoritos
                                 key={pokemon.id}
                                 pokemon={pokemon}
+                                eliminarFavorito={eliminarFavorito}
                                 
                             />
                         )
