@@ -1,8 +1,9 @@
 import React from 'react'
 import { Fragment } from 'react';
 import Buscador from './Buscador';
+import InfoPokemon from "./InfoPokemon";
 
-const Favoritos = ({favoritos,agregarFavorito}) => {
+const Favoritos = ({favoritos}) => {
     return ( 
         <Fragment>
             <div className="favoritos">
@@ -10,11 +11,10 @@ const Favoritos = ({favoritos,agregarFavorito}) => {
                 {
                     favoritos.map(
                         (pokemon,posicion)=>(
-                            <Buscador
-                            key={posicion}
-                            pokemon={pokemon}
-                            favoritos={favoritos}
-                            agregarFavorito={agregarFavorito}
+                            <InfoPokemon
+                                isFavoritos
+                                key={posicion}
+                                pokemon={pokemon}
                             />
                         )
                     )
