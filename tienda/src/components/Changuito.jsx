@@ -1,6 +1,6 @@
 import React from 'react'
-import { Fragment } from 'react';
-import './changuito.css'
+import { Fragment } from 'react/cjs/react.production.min';
+import './Changuito.css'
 import Producto from './Producto';
 
 const Changuito = ({changuito,agregarProducto}) => {
@@ -10,12 +10,13 @@ const Changuito = ({changuito,agregarProducto}) => {
                 <h3>Carrito</h3>
                 {
                     changuito.map(
-                        producto=>(
-                            <Producto 
-                            key={producto.id}
+                        (producto,posicion)=>(
+                            <Producto
+                            key={posicion}
                             producto={producto}
                             changuito={changuito}
                             agregarProducto={agregarProducto}
+                            cantidad={producto.cantidad}
 
                             />
                         )

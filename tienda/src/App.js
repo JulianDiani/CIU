@@ -7,10 +7,10 @@ import Changuito from "./components/Changuito";
 function App() {
 
   const [productos,guardarProductos]=useState([
-    {id:1,articulo:"Big Mac", precio:900},
-    {id:2,articulo:"Pollo crispy", precio:500},
-    {id:3,articulo:"Big veggie", precio:850},
-    {id:4,articulo:"Coca cola", precio:200},
+    {id:1,articulo:"Big Mac", precio:900,cantidad:0},
+    {id:2,articulo:"Pollo crispy", precio:500,cantidad:0},
+    {id:3,articulo:"Big veggie", precio:850,cantidad:0},
+    {id:4,articulo:"Coca cola", precio:200,cantidad:0}
   ]);
 
   const [changuito,agregarProducto]=useState([])

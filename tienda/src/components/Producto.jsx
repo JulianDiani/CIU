@@ -4,23 +4,41 @@ import { Fragment } from 'react'
 
 
 const Producto = ({producto,productos,changuito,agregarProducto}) => {
-    const {id,articulo,precio}=producto
+    const {id,articulo,precio,cantidad}=producto
     const seleccionarProducto = (id) => {
-        const producto=productos.filter(p=>p.id===id)[0]
-        agregarProducto([...changuito,producto]);
+        const productoAAgregar=productos.filter(p=>p.id===id)[0];
+        const productoEnElChanguito=changuito.filter(p=>p.id===productoAAgregar.id)[0];
+        if(productoEnElChanguito!=null){
+            productoEnElChanguito.cantidad+=1;
+        }
+        else{
+            agregarProducto([...changuito,productoAAgregar]);
+            productoAAgregar.cantidad+=1;
+        }
+        
 
     }
+    
     const eliminarProducto=(id)=>{
-        const productos=changuito.filter(
-            p=>p.id!==id)
+        const productoAEliminar=changuito.filter(p=>p.id===id)[0]
+        const productosDistintos=changuito.filter(p=>p.id!==id)
+        if(productoAEliminar.cantidad===1){
+            agregarProducto(productosDistintos)
+        }
+        else{
+            productoAEliminar.cantidad-=1
+        }
+      /*  const productos=changuito.filter(
+            p=>p.id===id)
         agregarProducto(productos);
+    */
     }
 
     return (  
         <Fragment>
             <div>
             <h3>
-                {id}-{articulo}-{precio}</h3>
+                {id}-{articulo}-{precio}-{cantidad}</h3>
                 {
                     productos
                     ?
