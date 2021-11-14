@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
-import Favoritos from './Favoritos';
+
 import { buscarPokemon } from '../api';
 
 
@@ -15,26 +15,25 @@ const Buscador = ({guardarPokemon}) => {
 
     
     const onClick=async (e)=>{
-        const pokemon=await buscarPokemon(pokemonABuscar);
-        if (pokemon!=undefined){
+        if (pokemonABuscar!==""){const pokemon=await buscarPokemon(pokemonABuscar);
             guardarPokemon(pokemon)
-
-        }
+        }}
         
-    }
     
      
     return ( 
         <div>
-           <div>
+           <div className="">
                <input                
                type="text" placeholder="Pokenombre" 
-               onChange={onChange}               
+               onChange={onChange}
+               className="border border-black rounded-md"               
                />
            </div>
            <div>
                <button
                onClick={onClick}
+               className="border border-black rounded-md"
                >
                    Buscar
                </button>
