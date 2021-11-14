@@ -25,7 +25,7 @@ const InfoPokemon=({pokemon, agregarFavorito,eliminarFavorito, isFavoritos = fal
                 <button
                 type="button"
                 className="border border-black rounded-md"
-                onClick={console.log("apretando boton")}
+                onClick={()=>eliminarFavorito(pokemon)}
                
                 >
                     EliminarFavorito

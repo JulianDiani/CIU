@@ -14,6 +14,7 @@ const Favoritos = ({favoritos}) => {
                                 isFavoritos
                                 key={pokemon.id}
                                 pokemon={pokemon}
+                                
                             />
                         )
                     )
