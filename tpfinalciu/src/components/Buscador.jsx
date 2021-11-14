@@ -16,24 +16,26 @@ const Buscador = ({guardarPokemon}) => {
     
     const onClick=async (e)=>{
         if (pokemonABuscar!==""){const pokemon=await buscarPokemon(pokemonABuscar);
-            guardarPokemon(pokemon)
-        }}
+        guardarPokemon(pokemon)
+    }}
         
     
      
     return ( 
-        <div>
-           <div className="">
+        <div className="flex items-center justify-center" >
+           <div>
                <input                
                type="text" placeholder="Pokenombre" 
                onChange={onChange}
                className="border border-black rounded-md"               
                />
+               <br />
            </div>
+           <br />
            <div>
                <button
                onClick={onClick}
-               className="border border-black rounded-md"
+               className="border border-black rounded-md items-center"
                >
                    Buscar
                </button>

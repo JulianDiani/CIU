@@ -5,8 +5,9 @@ import InfoPokemon from "./InfoPokemon";
 const Favoritos = ({favoritos,eliminarFavorito}) => {
     return ( 
         <Fragment>
-            <div className="favoritos">
+            <div className="favoritos ">
                 <h3>Mis pokemon favoritos: </h3>
+                <div className="">
                 {
                     favoritos.map(
                         (pokemon)=>(
@@ -20,6 +21,9 @@ const Favoritos = ({favoritos,eliminarFavorito}) => {
                         )
                     )
                 }
+
+                </div>
+                
             </div>
         </Fragment>
 

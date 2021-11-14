@@ -11,7 +11,11 @@ function App() {
   const [pokemon, setPokemon] = useState();
 
   const agregarFavorito = (pokemonParam) => {
-    setFavoritos([...favoritos, pokemonParam]);
+    
+    const estaEnFavoritos=favoritos.filter(p=>p===pokemonParam).length>0
+    if (!estaEnFavoritos){
+      setFavoritos([...favoritos, pokemonParam]);
+    }
   }
   const eliminarFavorito = (pokemonParam) => {
     const listaNueva = favoritos.filter(f=>f!==pokemonParam)
@@ -27,7 +31,8 @@ function App() {
         guardarPokemon={setPokemon}
       />
       {pokemon && <InfoPokemon pokemon={pokemon} agregarFavorito={agregarFavorito} eliminarFavorito={eliminarFavorito} />}
-      <Favoritos favoritos={favoritos} />
+      <Favoritos favoritos={favoritos}
+      eliminarFavorito={eliminarFavorito} />
     </Fragment>
   );
 }

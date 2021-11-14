@@ -3,8 +3,8 @@
 const InfoPokemon=({pokemon, agregarFavorito,eliminarFavorito, isFavoritos = false})=> {
     const { name, weight, abilities, types, sprites } = pokemon
     return (
-        <div className="flex">
-            <div className="border border-black rounded-md">
+        <div className="flex items-center justify-center ">
+            <div className="border border-black rounded-md bg-red-100 ">
                 <div>Nombre: {name}</div>
                 <div>Peso: {weight}</div>
                 <div>
