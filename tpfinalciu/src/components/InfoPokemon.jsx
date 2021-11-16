@@ -34,7 +34,7 @@ const InfoPokemon=({pokemon, agregarFavorito,eliminarFavorito, isFavoritos = fal
                 onClick={()=>eliminarFavorito(pokemon)}
                
                 >
-                    EliminarFavorito
+                    Eliminar favorito
                     
                 </button></div>
                 
