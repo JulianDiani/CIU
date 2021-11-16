@@ -4,7 +4,7 @@ import Header from "./components/header";
 import Buscador from "./components/Buscador";
 import Favoritos from "./components/Favoritos";
 import InfoPokemon from "./components/InfoPokemon";
-import "./header.css";
+
 
 function App() {
   const [favoritos, setFavoritos] = useState([]);
@@ -27,12 +27,17 @@ function App() {
   return (
     <Fragment>
       <Header />
+      <div className="bg-red-300" style={{height:"90vh"}}> 
       <Buscador
         guardarPokemon={setPokemon}
       />
       {pokemon && <InfoPokemon pokemon={pokemon} agregarFavorito={agregarFavorito} eliminarFavorito={eliminarFavorito} />}
+      
       <Favoritos favoritos={favoritos}
       eliminarFavorito={eliminarFavorito} />
+
+      </div>
+      
     </Fragment>
   );
 }

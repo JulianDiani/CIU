@@ -5,7 +5,7 @@ import logoPokemon from './imagenes/prueba2.png'
 const Header = () => {
     
     return ( 
-        <div className="flex items-center justify-center bg-yellow-300">
+        <div className="flex items-center justify-center bg-red-500">
             <img src={logoPokemon} alt="" />
              
         </div>
