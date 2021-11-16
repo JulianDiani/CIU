@@ -1,6 +1,7 @@
 export const buscarPokemon= async (pokemon)=>{
     try {
-        let url=`https://pokeapi.co/api/v2/pokemon/${pokemon}`
+        let pokemonAMinusculas=pokemon.toLowerCase();
+        let url=`https://pokeapi.co/api/v2/pokemon/${pokemonAMinusculas}`
         const respuesta=await fetch(url)
         const poke=await respuesta.json()
         return poke
